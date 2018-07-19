@@ -1,4 +1,3 @@
-
 {% extends 'portfolio/base.html' %}
 {% load staticfiles %}
 {% block content %}
@@ -36,8 +35,8 @@
                                         <img src="{% static "images/nonstock.jpg" %}" alt="non-stock"/>
                                         <div class="caption">
                                             <h2>Non-Stock Investments</h2>
-                                            <p>Our team also provides advice for Non-Stock investments.</p>
-                                            <p><a class="btn btn-primary" href="{% url 'portfolio:stock_list' %}"
+                                            <p>Our team also provides advises for Non-Stock investments.</p>
+                                            <p><a class="btn btn-primary" href="{% url 'portfolio:investment_list' %}"
                                                   role="button">View
                                                 details &raquo;</a></p>
                                         </div>
@@ -64,5 +63,3 @@
     </body>
     </html>
 {% endblock %}
-
-

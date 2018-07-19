@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 import requests
 
 
-# Create your models here.
 class Customer(models.Model):
     name = models.CharField(max_length=50)
     address = models.CharField(max_length=200)
@@ -30,7 +29,7 @@ class Customer(models.Model):
         return str(self.cust_number)
 
 class Investment(models.Model):
-  customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='investments')
+  customer = models.ForeignKey(Customer, on_delete=models.CASCADE, related_name='investment')
   category = models.CharField(max_length=50)
   description = models.CharField(max_length=200)
   acquired_value = models.DecimalField(max_digits=10, decimal_places=2)
