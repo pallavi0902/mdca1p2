@@ -123,3 +123,9 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = '/'
+
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'c5b7b07154ee61'
+EMAIL_HOST_PASSWORD = 'e7f2f0b5c0c5f2'
+EMAIL_PORT = '2525'
+
